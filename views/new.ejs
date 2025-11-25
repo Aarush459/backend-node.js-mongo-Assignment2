@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Person</title>
+</head>
+<body>
+  <h1>Create New Person</h1>
+
+  <form action="/person" method="POST">
+    <label>Name: <input type="text" name="name" required></label><br><br>
+    <label>Age: <input type="number" name="age"></label><br><br>
+    <label>Gender:
+      <select name="gender">
+        <option></option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+    </label><br><br>
+    <label>Mobile: <input type="text" name="mobile"></label><br><br>
+
+    <button type="submit">Create</button>
+    <a href="/person">Cancel</a>
+  </form>
+
+</body>
+</html>
